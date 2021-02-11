@@ -1,55 +1,86 @@
 body {margin:0}
+#button {color: black;
+        text-decoration: none;}
+
         .upper {display:grid;
                 grid-template-columns: 1fr 70px 60px 80px 60px 85px;
                 font-size: 12px;
                 position:fixed;
                 background-color: white;
                 opacity: 0.8;}
-        #logo {padding-left: 30px;
+        #logo {padding-left: 42px;
                padding-top: 5px;
                margin: 0;
                width: 14.5%;}
 
 
-        .PNU {display:grid;
-              grid-template-columns:1fr 1250px;
-              padding-top: 40px;}
-        #main {width: 80%}
-        #menu {font-size: 19px;
-               text-align: center;
-               padding-top: 90px;
-               padding-left: 50px;
-               padding-right: 113px;
-               line-height: 70px;}
+        .grid1 {display:grid;
+                grid-template-columns:1fr 1250px;
+                padding-top: 40px;}
+        #main {width: 80%;
+               padding-left: 43px;}
+        .mainmenu, #submenu1, #submenu2, #submenu3 {list-style-type: none;
+                                                    margin: 0;
+                                                    padding: 0;}
+        .mainmenu {font-size: 19px;
+                   padding-top: 110px;
+                   padding-left: 60px;
+                   padding-right: 60px;}
+        .mainmenu > li, #about, #notice, #community {text-align: center;
+                                                     padding-bottom: 10px;
+                                                     padding: 30px 0;}
+        #about, #notice, #community {position: relative;}
+        #submenu1 > li, #submenu2 > li, #submenu3 > li {font-size: 17px;
+                                                        text-align: center;
+                                                        color: white;
+                                                        background-color: black;
+                                                        width: 150px;
+                                                        padding-top: 8px;
+                                                        padding-bottom: 8px;}
+        #submenu1, #submenu2, #submenu3 {position: absolute;
+                                        top: 70px; left:-25px; z-index:10;
+                                        display: none;}
+        #about:hover #submenu1 {display:block;}
+        #notice:hover #submenu2 {display:block;}
+        #community:hover #submenu3 {display:block;}
+        
+
+        .grid2_1 {margin-top: 60px;
+                  text-align: center;
+                  background-color:rgb(255, 253, 234);}
+        .grid2_2 {background-color:rgb(255, 253, 234);
+                  display:grid;
+                  grid-template-columns: 1fr 250px 250px 1fr;}
+        .grid2_3 {background-color:rgb(255, 253, 234);
+                  text-align: center;
+                  margin: 0;
+                  padding-bottom: 15px;
+                  font-size: 13px;
+                  font-weight: lighter;}
+        #year {margin: 0;
+               margin-bottom: 10px;
+               padding-top: 30px;
+               font-size: 18px;}
+        #youandme {width: 40%;
+                   padding-left: 20px;}
+        #arrow1, #arrow2 {width: 8%;
+                          margin-top: 130px;}
+        #arrow1 {float: right;
+                 margin-right: 30px;}
+        #arrow2 {margin-left: 30px;}
+        .mem1, .mem2 {background-color: white;
+                      text-align: center;
+                      margin-top: 15px;
+                      margin-bottom: 20px;
+                      padding: 40px;}
+        .mem1 {margin-right: 15px;}
+        .mem2 {margin-left: 15px;}
+        #king, #queen {width: 40%;}
+        
 
 
-        .yellow {display:grid;
-                grid-template-columns: 1fr 410px;
-                padding-top: 80px;
-                padding-left: 10px;
-                padding-right: 10px;
-                line-height: 50px}
-        #youandme {padding-right: 10px;}
-        #gray {padding-left: 5px;}
-        #king, #queen {width: 60%;
-                       padding: 15px;}
-        #year, #name {text-align: right;
-                    font-size: 15px;
-                    margin: 0;
-                    padding-right: 20px;}
-        #year {padding-top: 96.4px;
-               color:grey;}
-        #name {font-weight: bold;
-               font-size: 35px;
-               padding-bottom: 20px;
-               border-bottom: solid grey 1px;}
-        #king {float:left;
-               margin-bottom: 20px}
-        #queen {float:right;}
-
-
-        .event {text-align: center;
-                margin-top: 80px;
+        .grid3 {text-align: center;
+                margin-top: 60px;
                 background-color:rgb(250, 250, 250);
                 padding-top:30px;
                 padding-bottom: 15px;}
@@ -64,16 +95,16 @@ body {margin:0}
              font-weight: lighter;}
  
              
-        #l1, #l2 {margin: 0;
+        #grid4_1, #grid4_2 {margin: 0;
                   padding-left: 15px;
                   text-align: center;}
-        #l1 {margin-top: 80px;
-             font-size: 40px;}
-        #l2 {margin-top: 5px;
-             margin-bottom: 15px;
-             font-size: 18px;
-             font-weight:normal;}
-        .link2 {display: grid;
+        #grid4_1 {margin-top: 60px;
+                  font-size: 40px;}
+        #grid4_2 {margin-top: 5px;
+                  margin-bottom: 15px;
+                  font-size: 18px;
+                 font-weight:normal;}
+        .link {display: grid;
                 grid-template-columns: 315px 315px 315px 315px;}
         #fb, #ig, #kt, #os {width: 90%;
                             margin-left: 15px;}
@@ -82,20 +113,21 @@ body {margin:0}
                         padding-top: 5px;
                         font-size: 18px;}
 
-        .bottom {margin-top: 80px;
+        .bottom {margin-top: 60px;
                  background-color: rgb(245, 245, 245);}
         #b1, #b2, #b3, #b4, #b5 {margin:0;
                                  text-align: right;
-                                 margin-right: 30px;}
+                                 margin-right: 15px;}
         #b1 {padding-top:30px;
              font-size: 30px;}
         #b2 {padding-top: 5px;
-             font-size: 17.3px;}
+             font-size: 17.3px;
+             color: grey;}
         #b3 {padding-top: 20px;
              font-size: 15px;}
         #b4 {padding-top: 20px;
-             font-size: 15px;}
+             font-size: 14.6px;}
         #b5 {padding-top: 5px;
-             padding-bottom: 20px;
-             font-size: 13.1px;
+             padding-bottom: 30px;
+             font-size: 15.2px;
              font-weight: lighter;}
