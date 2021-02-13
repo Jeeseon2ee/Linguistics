@@ -1,9 +1,12 @@
 body {margin:0}
 #button {color: black;
         text-decoration: none;}
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+                
+        }
 
         .upper {display:grid;
-                grid-template-columns: 1fr 70px 60px 80px 60px 85px;
+                grid-template-columns: 1fr 70px 60px 80px 60px 60px;
                 font-size: 12px;
                 position:fixed;
                 background-color: white;
@@ -61,10 +64,10 @@ body {margin:0}
                margin-bottom: 10px;
                padding-top: 30px;
                font-size: 18px;}
-        #youandme {width: 40%;
+        #youandme {width: 35%;
                    padding-left: 20px;}
-        #arrow1, #arrow2 {width: 8%;
-                          margin-top: 130px;}
+        #arrow1, #arrow2 {width: 7%;
+                          margin-top: 125px;}
         #arrow1 {float: right;
                  margin-right: 30px;}
         #arrow2 {margin-left: 30px;}
@@ -72,10 +75,11 @@ body {margin:0}
                       text-align: center;
                       margin-top: 15px;
                       margin-bottom: 20px;
-                      padding: 40px;}
+                      padding-top: 50px;
+                      padding-bottom: 50px;}
         .mem1 {margin-right: 15px;}
         .mem2 {margin-left: 15px;}
-        #king, #queen {width: 40%;}
+        #king, #queen {width: 25%;}
         
 
 
@@ -84,30 +88,41 @@ body {margin:0}
                 background-color:rgb(250, 250, 250);
                 padding-top:30px;
                 padding-bottom: 15px;}
-        #e1 {margin: 0; 
+        #e1, #a1 {margin: 0; 
              font-size: 40px;}
         #mask {width: 50%;}
-        #e2 {margin: 0;
+        #e2, #a3 {margin: 0;
              font-size: 18px;
              padding-bottom: 10px;}
-        #e3 {margin: 0;
+        #e3, #a4 {margin: 0;
              font-size: 13px;
              font-weight: lighter;}
- 
-             
-        #grid4_1, #grid4_2 {margin: 0;
+
+
+        .grid4 {text-align: center;
+                margin-top: 60px;
+                background-color:rgb(245, 245, 245);
+                padding-top:30px;
+                padding-bottom: 15px;}
+        #que {width: 40%;}
+        #a3 {padding-top: 10px;}
+        
+        
+     
+        .grid5 {margin-top: 40px;}
+        #grid5_1, #grid5_2 {margin: 0;
                   padding-left: 15px;
                   text-align: center;}
-        #grid4_1 {margin-top: 60px;
-                  font-size: 40px;}
-        #grid4_2 {margin-top: 5px;
+        #grid5_1 {font-size: 40px;
+                  padding-top: 30px;}
+        #grid5_2, #a2 {margin-top: 5px;
                   margin-bottom: 15px;
                   font-size: 18px;
-                 font-weight:normal;}
+                  font-weight:normal;}
         .link {display: grid;
                 grid-template-columns: 315px 315px 315px 315px;}
-        #fb, #ig, #kt, #os {width: 90%;
-                            margin-left: 15px;}
+        #fb, #ig, #kt, #os {width: 85%;
+                            margin-left: 25px;}
         #f, #i, #k, #o {text-align: center;
                         margin: 0;
                         padding-top: 5px;
